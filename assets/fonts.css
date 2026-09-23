@@ -1,0 +1,14 @@
+/* Production font setup: place Vazirmatn .woff2 files in assets/fonts/ when deploying.
+   The fallback stack keeps the site fully usable before font files are uploaded. */
+@font-face{
+  font-family:'Vazirmatn Local';
+  src:url('fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight:400;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Vazirmatn Local';
+  src:url('fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight:700;font-style:normal;font-display:swap;
+}
+:root{--gavin-font:'Vazirmatn Local','Vazirmatn',Tahoma,Arial,sans-serif}
+html,body,input,button,textarea,select{font-family:var(--gavin-font)!important}
