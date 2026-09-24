@@ -1,185 +1,176 @@
 <div align="center">
 
-# 🌿 گوین | Gavin Shop
+# 🌿 Gavin Shop
 
-### هنر دست · طبیعت · روایت
+### Handmade · Nature · Story
 
-**فروشگاه آنلاین حرفه‌ای صنایع دستی ایرانی**  
-A secure, elegant & production-ready PHP marketplace for authentic Iranian handicrafts
+**A premium, production-ready online store for authentic Iranian handicrafts**
 
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge)]()
 
 <br>
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Coming_Soon-blue?style=for-the-badge)]()
 [![GitHub](https://img.shields.io/badge/⭐_Star_this_repo-black?style=for-the-badge&logo=github)](https://github.com/sinajr2011-prog/Gavin-shop)
 
 </div>
 
 ---
 
-## ✨ درباره پروژه
+## ✨ About the Project
 
-**گوین** یک فروشگاه آنلاین کامل و آماده استقرار برای فروش صنایع دستی دست‌ساز ایرانی است.  
-طراحی شده با تمرکز روی زیبایی بصری، تجربه کاربری روان، امنیت و مقیاس‌پذیری واقعی.
+**Gavin** is a complete, elegant, and production-ready e-commerce platform built specifically for selling handmade Iranian crafts.
 
-این پروژه شامل:
+It focuses on beautiful design, smooth user experience, real security, and clean architecture — ready for real-world deployment.
 
-- فروشگاه عمومی زیبا با گالری و روایت‌ها
-- سیستم سفارش‌گذاری کامل با محاسبه هزینه ارسال بر اساس استان/شهر
-- چت مستقیم مشتری ↔ مالک
-- پنل فروشنده + پنل توسعه‌دهنده قدرتمند
-- سیستم اعلان، لاگ حسابرسی و مدیریت درگاه پرداخت
-
-## 🚀 ویژگی‌های کلیدی
-
-### برای مشتریان
-- 🏠 صفحه اصلی جذاب با محصولات ویژه
-- 🛍 فروشگاه کامل با فیلتر و جستجو
-- 📦 صفحه محصول حرفه‌ای (تصاویر، موجودی، قیمت واقعی)
-- 🛒 سبد خرید هوشمند
-- 💬 چت زنده با مالک گوین
-- 👤 پنل کاربری (سفارش‌ها، اعلان‌ها، پروفایل)
-
-### برای مالک / فروشنده
-- 📊 داشبورد مدیریت سفارش‌ها
-- 🚚 سیستم ارسال هوشمند (استان + شهر + نرخ‌های تأییدشده)
-- 📦 مدیریت محصولات و دسته‌بندی‌های پویا
-- 💰 مدیریت مالی و درخواست تسویه
-- 🔔 سیستم اعلان داخلی
-
-### برای توسعه‌دهنده
-- 🛡 پنل توسعه‌دهنده کامل
-- 📝 لاگ حسابرسی (Audit Log)
-- 🔌 مدیریت درگاه‌های پرداخت
-- 📈 نظارت بر فروشندگان و سفارش‌ها
-- 🔒 کنترل دسترسی نقش‌محور
+### What you get:
+- Stunning public storefront with gallery & storytelling pages
+- Full order system with province/city-based shipping calculation
+- Real-time chat between customer and store owner
+- Powerful Seller Panel + Developer Panel
+- Notifications, audit logs, and payment gateway management
 
 ---
 
-## 🛠 تکنولوژی‌ها
+## 🚀 Key Features
 
-| لایه | تکنولوژی |
-|------|----------|
-| Backend | PHP 8.1+ (Native) |
-| Database | MySQL 8 / MariaDB |
-| Frontend | HTML5 · CSS3 · Vanilla JS |
-| Security | CSRF Protection · Password Hashing · Prepared Statements |
-| Architecture | Clean Structure · Role-based Access · Atomic Transactions |
+### For Customers
+- Beautiful homepage with featured products
+- Full shop with clean product pages
+- Real prices, stock management & add-to-cart
+- Smart cart & checkout flow
+- Direct chat with the store owner
+- Personal account (orders, notifications, profile)
+
+### For Store Owner / Seller
+- Complete order management dashboard
+- Smart shipping system (province + city + approved rates)
+- Product & dynamic category management
+- Financial overview & payout requests
+- Internal notification system
+
+### For Developer
+- Full developer control panel
+- Audit logs for every important action
+- Payment gateway management
+- Seller & order monitoring
+- Role-based access control
 
 ---
 
-## 📁 ساختار پروژه
+## 🛠️ Tech Stack
+
+| Layer          | Technology                          |
+|----------------|-------------------------------------|
+| Backend        | PHP 8.1+ (Native)                   |
+| Database       | MySQL 8 / MariaDB                   |
+| Frontend       | HTML5 · CSS3 · Vanilla JavaScript   |
+| Security       | CSRF · Password Hashing · Prepared Statements |
+| Architecture   | Clean Structure · Role-based Access · Atomic Transactions |
+
+---
+
+## 📁 Project Structure
 
 ```text
 Gavin-shop/
-├── assets/                 # CSS, JS, تصاویر گالری
-├── config/                 # تنظیمات دیتابیس، احراز هویت، هلپرها
-├── account/                # پنل کاربری مشتری
+├── assets/                 # CSS, JS, gallery images
+├── config/                 # Database, auth, helpers
+├── account/                # Customer account panel
 ├── panel/
-│   ├── seller/             # پنل فروشنده
-│   └── developer/          # پنل توسعه‌دهنده
-├── api/                    # APIهای سفارش
-├── database/               # schema + seed + migrationها
-├── uploads/products/       # تصاویر محصولات (writable)
-├── index.php               # صفحه اصلی
-├── shop.php                # فروشگاه
-├── product.php             # صفحه محصول
-├── checkout.php            # تسویه‌حساب
-├── chat.php                # چت
+│   ├── seller/             # Seller panel
+│   └── developer/          # Developer panel
+├── api/                    # Order API endpoints
+├── database/               # Schema, seed & migrations
+├── uploads/products/       # Product images (must be writable)
+├── index.php
+├── shop.php
+├── product.php
+├── checkout.php
+├── chat.php
 └── ...
 ```
 
 ---
 
-## ⚙️ نصب و راه‌اندازی
+## ⚙️ Installation
 
-### ۱. کلون کردن پروژه
+### 1. Clone the repository
 ```bash
 git clone https://github.com/sinajr2011-prog/Gavin-shop.git
 cd Gavin-shop
 ```
 
-### ۲. ایجاد دیتابیس
+### 2. Create the database
 ```sql
 CREATE DATABASE gavin CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-سپس فایل‌های زیر را به ترتیب اجرا کنید:
-
+Then run these files in order:
 1. `database/schema.sql`
-2. `database/production-final.sql` (اگر از نسخه قبلی می‌آیید)
-3. `database/seed.php` (یک‌بار)
+2. `database/production-final.sql` (if upgrading)
+3. `database/seed.php` (run once)
 
-### ۳. تنظیمات
-فایل `config/config.php` را ویرایش کنید:
+### 3. Configure
+Edit `config/config.php`:
 
 ```php
 const DB_HOST = 'localhost';
 const DB_NAME = 'gavin';
 const DB_USER = 'your_user';
 const DB_PASS = 'your_password';
-const BASE_URL = 'https://yourdomain.com'; // اختیاری
+const BASE_URL = 'https://yourdomain.com'; // optional
 ```
 
-### ۴. دسترسی پوشه آپلود
+### 4. Make uploads writable
 ```bash
 chmod -R 755 uploads/products
 ```
 
-### ۵. اجرای Seed
+### 5. Run the seeder
 ```bash
 php database/seed.php
 ```
 
-> ⚠️ بعد از اجرا حتماً رمزهای پیش‌فرض را تغییر دهید!
+> ⚠️ Change the default passwords immediately after seeding!
 
 ---
 
-## 🔐 حساب‌های پیش‌فرض Seed
+## 🎨 Design Philosophy
 
-| نقش | نام | تلفن | رمز عبور |
-|-----|-----|------|----------|
-| Developer | مدیر توسعه گوین | +989150000000 | ChangeMe123! |
-| Seller (مالک) | محمد سیدآبادی | +989150594269 | ChangeMe123! |
-
----
-
-## 🎨 طراحی
-
-- رنگ‌بندی الهام‌گرفته از طبیعت و صنایع دستی
-- فونت **وزیرمتن** (Vazirmatn)
-- کاملاً RTL و ریسپانسیو
-- تجربه کاربری نرم و مینیمال
+- Color palette inspired by nature and traditional crafts
+- Clean, modern, fully RTL-ready interface
+- Soft shadows, elegant typography, and smooth interactions
+- Mobile-first & fully responsive
 
 ---
 
-## 👨‍💻 توسعه‌دهندگان
+## 👨‍💻 Developer
 
-| | نام | نقش | ارتباط |
-|---|-----|------|--------|
-| **SJ** | سینا جعفری | توسعه‌دهنده اصلی · طراح UI/UX | [GitHub](https://github.com/sinajr2011-prog) · [Telegram](https://t.me/SiJrOfficial) |
+**Sina Jafari**  
+Main Developer & UI/UX Designer
+
+- GitHub: [sinajr2011-prog](https://github.com/sinajr2011-prog)
+- Telegram: [@SiJrOfficial](https://t.me/SiJrOfficial)
 
 ---
 
-## 📜 لایسنس
+## 📜 License
 
-این پروژه **خصوصی** است و متعلق به تیم گوین می‌باشد.  
-هرگونه کپی یا استفاده تجاری بدون اجازه ممنوع است.
+This project is **private** and owned by the Gavin team.  
+Any commercial use or redistribution without permission is strictly prohibited.
 
 ---
 
 <div align="center">
 
-**ساخته شده با ❤️ در ایران**  
-**Made with love in Iran**
-از دست تا زندگی · گوین
+**Made with ❤️ in Iran**  
+From hand to life · Gavin
 
 <br>
 
-[⬆ بازگشت به بالا](#-گوین--gavin-shop)
+[⬆ Back to top](#-gavin-shop)
 
 </div>
