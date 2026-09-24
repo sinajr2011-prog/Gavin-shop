@@ -34,18 +34,6 @@ A secure, elegant & production-ready PHP marketplace for authentic Iranian handi
 - پنل فروشنده + پنل توسعه‌دهنده قدرتمند
 - سیستم اعلان، لاگ حسابرسی و مدیریت درگاه پرداخت
 
----
-
-## 🖼 پیش‌نمایش
-
-> 📸 **Screenshots** (به‌زودی اضافه می‌شود)
-
-| صفحه اصلی | فروشگاه | صفحه محصول | پنل مدیریت |
-|-----------|---------|------------|------------|
-| ![Home](https://via.placeholder.com/400x250/425747/f5f0e7?text=Home+Page) | ![Shop](https://via.placeholder.com/400x250/60725f/f5f0e7?text=Shop) | ![Product](https://via.placeholder.com/400x250/a65d43/f5f0e7?text=Product) | ![Panel](https://via.placeholder.com/400x250/b4935c/f5f0e7?text=Admin+Panel) |
-
----
-
 ## 🚀 ویژگی‌های کلیدی
 
 ### برای مشتریان
@@ -174,7 +162,6 @@ php database/seed.php
 | | نام | نقش | ارتباط |
 |---|-----|------|--------|
 | **SJ** | سینا جعفری | توسعه‌دهنده اصلی · طراح UI/UX | [GitHub](https://github.com/sinajr2011-prog) · [Telegram](https://t.me/SiJrOfficial) |
-| **MH** | محمدجواد همت‌آبادی | توسعه‌دهنده سیستم و دیتابیس | سروش پلاس |
 
 ---
 
@@ -188,6 +175,7 @@ php database/seed.php
 <div align="center">
 
 **ساخته شده با ❤️ در ایران**  
+**Made with love in Iran**
 از دست تا زندگی · گوین
 
 <br>
