@@ -1,33 +1,31 @@
-# Gavin Final Production v4
+# Gavin Final Production v5.1 (Ready for Deploy)
 
-این نسخه بر پایه Gavin Production v3 ساخته شده و برای استقرار PHP/MySQL آماده‌سازی شده است.
+این نسخه برای استقرار سریع روی هاست PHP/MySQL آماده شده است.
 
-## تغییرات اصلی
-- گوین فروشگاه شخصی با **یک فروشنده/مالک** است؛ امکان ساخت فروشنده دوم حذف شده.
-- ثبت‌نام مشتری با نام، شماره تلفن، آدرس، کدپستی و رمز عبور.
-- ورود مشتری با شماره تلفن و رمز.
-- قیمت سبد خرید از قیمت واقعی محصول در دیتابیس می‌آید و دیگر «تماس برای قیمت» وجود ندارد.
-- صفحه محصول با مشخصات، تصاویر، قیمت، موجودی، افزودن به سبد و چت.
-- چت مشتری ↔ مالک گوین با ذخیره در دیتابیس.
-- پنل مالک برای پیام‌ها و پنل توسعه‌دهنده برای مشاهده همه چت‌ها.
-- پرداخت به صورت «Payment-ready» پیاده شده؛ API واقعی درگاه بعد از انتخاب سرویس وصل می‌شود.
-- فوتر شامل نشانی نمایشگاه، نشانی کارگاه و تلفن‌های تماس مالک است.
-- بخش درباره توسعه‌دهندگان به سایت اضافه شده.
-- گالری همچنان فقط گالری است و هیچ تصویر گالری به‌عنوان محصول seed نمی‌شود.
+## تغییرات این پچ (v5.1)
+- فونت Vazirmatn از CDN معتبر لود می‌شود + پشتیبانی از فایل لوکال
+- `config/config.php` تمیز و پروداکشن‌پسند شد (سشن امن‌تر + تابع `url()`)
+- ریدایرکت‌های لاگین با `BASE_URL` سازگار شدند
+- `.htaccess` قوی‌تر شد (هدرهای امنیتی + محافظت از پوشه config)
+- پیام‌ها و کامنت‌های seed و payment واضح‌تر شدند
 
-## نصب
-1. database/schema.sql را روی MySQL وارد کنید.
-2. config/config.php را با مشخصات دیتابیس تنظیم کنید.
-3. database/seed.php را یک‌بار اجرا کنید و رمزهای seed را فوراً تغییر دهید.
-4. پوشه uploads/products را writable کنید.
-5. SSL را فعال کنید.
-6. برای اتصال درگاه، فقط endpoint درخواست و verify را در payment.php و API مربوطه جایگزین کنید.
+## نصب سریع
+1. `database/schema.sql` را روی MySQL وارد کنید  
+   (اگر دیتابیس قبلی دارید → `database/production-final.sql` را هم اجرا کنید)
+2. فایل `config/config.php` را باز کنید و این سه مورد را پر کنید:
+   - `DB_USER`
+   - `DB_PASS`
+   - `BASE_URL` (اگر سایت در ریشه دامنه است خالی بگذارید)
+3. یک‌بار `database/seed.php` را از مرورگر یا CLI اجرا کنید
+4. فوری با حساب developer و seller وارد شوید و رمز `ChangeMe123!` را عوض کنید
+5. پوشه `uploads/products` را writable کنید (۷۵۵ یا ۷۷۵)
+6. SSL را فعال کنید
+7. فایل `setup-check.php` را باز کنید تا اتصال دیتابیس را تست کنید
 
+## درگاه پرداخت
+فعلاً در حالت «Payment-ready» است.  
+به محض مشخص شدن درگاه (زرین‌پال / نکست‌پی / ...)، فقط بخش درخواست و Verify در `payment.php` وصل می‌شود.
 
-## Production v5 upgrade
-- Province/city-aware shipping with owner-defined rates and developer approval.
-- Price and shipping snapshots at order time.
-- Atomic stock decrement with row locking.
-- Audit logs, notifications, gateway management.
-- Seller order workflow and dynamic seller categories.
-- Run `database/production-final.sql` on an existing v4 database before using the new code.
+## فونت
+سایت همین الان با فونت درست نمایش داده می‌شود (از CDN).  
+اگر می‌خواهید کاملاً لوکال باشد، فایل‌های woff2 را داخل `assets/fonts/` بگذارید (توضیح داخل README همان پوشه).

@@ -1,9 +1,20 @@
 Options -Indexes
 DirectoryIndex index.php
+
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
-<FilesMatch "\.(sql|md|txt|log)$">
+
+# جلوگیری از دسترسی مستقیم به فایل‌های حساس
+<FilesMatch "\.(sql|md|txt|log|env)$">
   Require all denied
 </FilesMatch>
+
+# محافظت از پوشه config (اگر سرور اجازه دهد)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^config/ - [F,L]
+</IfModule>
